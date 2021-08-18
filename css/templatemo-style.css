@@ -234,6 +234,7 @@ body.light .logo{
 .logo-dark{
     display: none;
 }
+
 body.light .logo-dark{
     display: block;
 }
