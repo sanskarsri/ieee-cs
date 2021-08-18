@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<link href="img/SB_LOGO-min.png" rel="shortcut icon">
+	<link href="img/cs_LOGO.png" rel="shortcut icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -39,7 +39,7 @@
 
 <nav style="position: fixed;z-index: 10000;top: 0;left: 0;width: 99vw; background-color: #080e14;" class="navbar navbar-expand-lg navbar-dark">
   <a class="navbar-brand" href="home.html">
-    <img src="img/SB_LOGO-min.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    <!-- <img src="img/cs_LOGO.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
     IEEE-CS
   </a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -68,14 +68,17 @@
 				<div class="row cb-slideshow-text-container mb-5">
 
 					<div class= "tm-content col-xl-6 col-sm-6 col-xs-6 pl-4 section">
-					<header class="mb-5"><h1>What we do</h1></header>
-
-                    	<ul class="mb-5 text-light">
-							<li class="pb-3"> We empower and support new ideas and innovations, as well as endeavour to provide them a platform to rise and shine.</li>
-							<li class="pb-3"> Offering regular mentorship & guidance ,a two way learning process and time to time interaction for computer society students by aims to enhancing their maximum skills and knowledge.</li>
-						<!-- 	<li class="pb-3"> The society is driven by the central goals of equity , diversity ,inclusion and aim at serving computing at its best.</li> -->
-							<li class="pb-3"> Organize workshop and special talks  and thus giving opportunity to learn new aspects, others perspectives , latest information and a good networking.
-</li>
+					<header class="mb-5"><h1 style="width: fit-content;border-bottom: 2px solid #fff;">Vision</h1></header>
+                         
+                    	<ul class="mb-5 text-light" id="anime">
+							<li style="display: initial;" class="pb-3"> A community, where people can interact and ask their doubts freely.</li>
+							<li style="display: none;" class="pb-3">Open to all IEEE members irrespective of their branches.</li>
+						    <li style="display: none;" class="pb-3"> Regular updates and competition.</li>
+                            <li style="display: none;" class="pb-3"> Offering regular mentorship & guidance for computer society students.</li>
+                            <li style="display: none;" class="pb-3"> Ignite the culture of ideation to project.</li>
+                            <li style="display: none;" class="pb-3"> Organize workshop , special talks and technical events.</li>
+                            <li style="display: none;" class="pb-3"> Enabling open source contributions and exploit innovative group projects.</li>
+                             
 						</ul>
 
  
@@ -84,7 +87,10 @@
 
 
 					<div class= "tm-content col-xl-6 col-sm-6 col-xs-6 pl-4 section">
-					<header class="mb-5"><h1>Basics</h1></header>
+					<header class="row">
+						<h1 class="col-12 col-sm-6 col-md-6 d-flex align-items-center">Mission</h1>
+						<img class="col-12 col-sm-6 col-md-3" src="img/cs_LOGO.png" width="150" class="d-inline-block align-top" alt="">
+					</header>
 					<P class="mb-5">All updates for IEEE-CS will be taken from here. Thank you for visiting our site!</P>
 					
                	    	<div class="row form-section mb-5">
@@ -98,7 +104,7 @@
                                 </a>
 							</div>
 						</div>
-                    <p>Connect with us</p>
+                    <p style="width: fit-content;border-bottom: 2px solid #fff;">Connect with us</p>
 					<div class="tm-social-icons-container text-xs-center">
 	                    <a target="_sanskar" href="https://chat.whatsapp.com/Fw5qjDVxrVj5qOSIpJ39qV" class="tm-social-link"><i class="fa fa-whatsapp"></i></a>
 	                    <a target="_sanskar" href="mailto:techsrijan@mmmut.ac.in" class="tm-social-link"><i class="fa fa-envelope"></i></a>
@@ -119,4 +125,15 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" ></script>	
 <script type="text/javascript" src="js/particles.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
+	<script>
+        var text= document.getElementById('anime');
+        var word=text.getElementsByTagName('li');
+        var i=0;
+        function rotator(){
+            word[i].style.display='none';
+            i=(i+1)%word.length;
+            word[i].style.display='initial';
+        }
+        setInterval(rotator,2500);
+    </script>
 </html>
