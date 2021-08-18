@@ -24,23 +24,16 @@
   <link rel="stylesheet" href="css/templatemo-style.css">
   
   <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
-  <style>
-	  .mine:hover{
-		  color:#0b81a7;
-		  font-weight: 500;
-		  text-decoration: none;
-	  }
-  </style>
 		
 	</head>
 
 	<body>
 
 
-<nav style="position: fixed;z-index: 10000;top: 0;left: 0;width: 99vw; background-color: #080e14;" class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark mine-nav">
   <a class="navbar-brand" href="home.html">
     <!-- <img src="img/cs_LOGO.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-    IEEE-CS
+    IEEE Computer Society
   </a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -66,18 +59,27 @@
 
 			<div class="container-fluid">
 				<div class="row cb-slideshow-text-container mb-5">
-
+                    <div class="col-12 mt-5 ml-4" style="z-index:1001;">
+						<div class="mt-4" >
+							<input type="checkbox" class="checkbox" id="chk" />
+							<label class="label" for="chk">
+								<img width="15" src="img/icons8-moon-64.png"/>
+								<img width="15" src="img/icons8-sun-24.png"/>
+								<div class="ball"></div>
+							</label>
+						</div>
+					</div>
 					<div class= "tm-content col-xl-6 col-sm-6 col-xs-6 pl-4 section">
-					<header class="mb-5"><h1 style="width: fit-content;border-bottom: 2px solid #fff;">Vision</h1></header>
+					<header class="mb-5"><h1  class="line text-clr">Vision</h1></header>
                          
-                    	<ul class="mb-5 text-light" id="anime">
-							<li style="display: initial;" class="pb-3"> A community, where people can interact and ask their doubts freely.</li>
-							<li style="display: none;" class="pb-3">Open to all IEEE members irrespective of their branches.</li>
-						    <li style="display: none;" class="pb-3"> Regular updates and competition.</li>
-                            <li style="display: none;" class="pb-3"> Offering regular mentorship & guidance for computer society students.</li>
-                            <li style="display: none;" class="pb-3"> Ignite the culture of ideation to project.</li>
-                            <li style="display: none;" class="pb-3"> Organize workshop , special talks and technical events.</li>
-                            <li style="display: none;" class="pb-3"> Enabling open source contributions and exploit innovative group projects.</li>
+                    	<ul class="mb-5 text-light text-clr" id="anime">
+							<li style="display: initial;" class="pb-3 text-clr"> A community, where people can interact and ask their doubts freely.</li>
+							<li style="display: none;" class="pb-3 text-clr">Open to all IEEE members irrespective of their branches.</li>
+						    <li style="display: none;" class="pb-3 text-clr"> Regular updates and competition.</li>
+                            <li style="display: none;" class="pb-3 text-clr"> Offering regular mentorship & guidance for computer society students.</li>
+                            <li style="display: none;" class="pb-3 text-clr"> Ignite the culture of ideation to project.</li>
+                            <li style="display: none;" class="pb-3 text-clr"> Organize workshop , special talks and technical events.</li>
+                            <li style="display: none;" class="pb-3 text-clr"> Enabling open source contributions and exploit innovative group projects.</li>
                              
 						</ul>
 
@@ -88,14 +90,15 @@
 
 					<div class= "tm-content col-xl-6 col-sm-6 col-xs-6 pl-4 section">
 					<header class="row">
-						<h1 class="col-12 col-sm-6 col-md-6 d-flex align-items-center">Mission</h1>
-						<img class="col-12 col-sm-6 col-md-3" src="img/cs_LOGO.png" width="150" class="d-inline-block align-top" alt="">
+						<h1 class="col-12 col-sm-6 col-md-6 d-flex align-items-center text-clr">Mission</h1>
+						<img class="col-12 col-sm-6 col-md-3 logo" src="img/cs_LOGO.png" width="150" class="d-inline-block align-top" alt="">
+						<img class="col-12 col-sm-6 col-md-3 logo-dark" src="img/cs_LOGO-dark.png" width="150" class="d-inline-block align-top" alt="">
 					</header>
-					<P class="mb-5">All updates for IEEE-CS will be taken from here. Thank you for visiting our site!</P>
+					<P class="mb-5 text-clr">All updates for IEEE-CS will be taken from here. Thank you for visiting our site!</P>
 					
                	    	<div class="row form-section mb-5">
                	    		<div class="col-md-5 col-sm-5 col-xs-5">
-								<a href="https://chat.whatsapp.com/Fw5qjDVxrVj5qOSIpJ39qV"><button class="btn btn-success"> <i class="fa fa-whatsapp"></i> Join us on Whatsapp</button>
+								<a href="https://chat.whatsapp.com/Fw5qjDVxrVj5qOSIpJ39qV"><button class="btn btn-success"> <i style="color: #fff;" class="fa fa-whatsapp"></i> Join us on Whatsapp</button>
 								</a>
 							</div>
 							<div class="col-md-5 col-sm-5 col-xs-5">
@@ -104,7 +107,7 @@
                                 </a>
 							</div>
 						</div>
-                    <p style="width: fit-content;border-bottom: 2px solid #fff;">Connect with us</p>
+                    <p class="line text-clr">Connect with us</p>
 					<div class="tm-social-icons-container text-xs-center">
 	                    <a target="_sanskar" href="https://chat.whatsapp.com/Fw5qjDVxrVj5qOSIpJ39qV" class="tm-social-link"><i class="fa fa-whatsapp"></i></a>
 	                    <a target="_sanskar" href="mailto:techsrijan@mmmut.ac.in" class="tm-social-link"><i class="fa fa-envelope"></i></a>
@@ -136,4 +139,11 @@
         }
         setInterval(rotator,2500);
     </script>
+	<script>
+		const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('light');
+});
+	</script>
 </html>

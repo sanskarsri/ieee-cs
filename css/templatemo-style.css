@@ -4,6 +4,7 @@ body {
 	font-weight: 300;
 	overflow-x: hidden;
 	background-color: #080e14;
+    transition: 0.5s ease-in;
 }
 
 a, button {
@@ -126,9 +127,10 @@ p {
     /* margin: 10px 0px 10px 0px; */
 	font-size: 18px;
     position: relative;
-    /*bottom: 0;
-    left: 0;
-*/    transform: translateY(-50%);
+    padding: 10px 0;
+    bottom: 0;
+    /* left: 0; */
+    /* transform: translateY(-50%); */
     color: white;
     text-align:center;
     background-color: #080e14c9;
@@ -151,4 +153,88 @@ p {
 	.tm-btn-subscribe {
 		margin-top: 20px;
 	}
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+body.light{
+    background-color: #fff;
+    color:#000;
+}
+.mine-nav{
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 99vw; 
+    background-color: #080e14;
+}
+body.light .mine-nav,body.light .footer-link{
+    background-color: #e67e22;
+}
+body.light header h1{
+    /* color: #e67e22; */
+}
+.mine:hover{
+    color:#0b81a7;
+    font-weight: 500;
+    text-decoration: none;
+}
+body.light .mine:hover{
+    color:#000;
+}
+.line{
+    width: fit-content;
+    border-bottom: 2px solid #fff;
+}
+body.light .line{
+    border-bottom: 2px solid #e67e22;
+    /* color: #000; */
+}
+body.light i{
+    color: #000;
+}
+body.light .text-clr{
+color:#000;
+}
+body.light .logo{
+    display: none;
+}
+.logo-dark{
+    display: none;
+}
+body.light .logo-dark{
+    display: block;
 }
