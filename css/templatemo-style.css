@@ -221,7 +221,6 @@ body.light .mine:hover{
 }
 body.light .line{
     border-bottom: 2px solid #e67e22;
-    /* color: #000; */
 }
 body.light i{
     color: #000;
