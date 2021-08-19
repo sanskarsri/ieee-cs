@@ -186,7 +186,7 @@ p {
 	transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .label .ball {
+body.light .label .ball {
 	transform: translateX(24px);
 }
 body.light{

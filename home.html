@@ -33,7 +33,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark mine-nav">
   <a class="navbar-brand" href="home.html">
     <!-- <img src="img/cs_LOGO.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-    IEEE Computer Society
+    IEEE Computer Society MMMUT
   </a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -45,19 +45,13 @@
       <li class="nav-item">
         <a class="nav-link" href="about-us.html">About Us </a>
       </li>
-<!--       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li> -->
     </ul>
-    <!-- <span class="navbar-text">
-      Navbar text with an inline element
-    </span>
- -->  </div>
+    </div>
 </nav>
 			<div id="particles-js"></div>
 
 
-			<div class="container-fluid">
+			<div class="container-fluid pt-5">
 				<div class="row cb-slideshow-text-container mb-5">
                     <div class="col-12 mt-5 ml-4" style="z-index:1001;">
 						<div class="mt-4" >
@@ -94,7 +88,7 @@
 						<img class="col-12 col-sm-6 col-md-3 logo" src="img/cs_LOGO.png" width="150" class="d-inline-block align-top" alt="">
 						<img class="col-12 col-sm-6 col-md-3 logo-dark" src="img/cs_LOGO-dark.png" width="150" class="d-inline-block align-top" alt="">
 					</header>
-					<P class="mb-5 text-clr">All updates for IEEE-CS will be taken from here. Thank you for visiting our site!</P>
+					<P class="mb-5 text-clr">We create a collaborative working environment for the inquisitive minds of  IEEE-MMMUT  in order to foster their skills in computer science and technology and hence provide them network with an unparalleled, global community of computing proffesionals.<br>All updates for IEEE-CS will be taken from here. Thank you for visiting our site!</P>
 					
                	    	<div class="row form-section mb-5">
                	    		<div class="col-md-5 col-sm-5 col-xs-5">
@@ -141,9 +135,23 @@
     </script>
 	<script>
 		const chk = document.getElementById('chk');
+		const currentTheme = localStorage.getItem("theme");
+		if (currentTheme == "light") {
+          document.body.classList.toggle('light');
+        }
 
 chk.addEventListener('change', () => {
 	document.body.classList.toggle('light');
+	const curTheme = localStorage.getItem("theme");
+	if (curTheme == "light") {
+		  theme="dark";
+	  }
+	  else
+	  {
+		  theme="light";
+	  }
+	  localStorage.setItem("theme", theme);
 });
+
 	</script>
 </html>
